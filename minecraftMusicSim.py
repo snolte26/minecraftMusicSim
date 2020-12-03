@@ -14,8 +14,9 @@ def playSong(songs):
         webbrowser.open(url, new)
         time.sleep(25)
         pyautogui.press("k")
+        time.sleep(1)
         pyautogui.hotkey('alt', 'tab')
-        pyautogui.click()
+        time.sleep(1)
 
         time.sleep(300)
 
