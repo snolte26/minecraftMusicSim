@@ -1,2 +1,17 @@
 # minecraftMusicSim
 Simulates Mincreaft music playing as you work
+
+`````````````````````````````````````````````````````````````````````````````````````````````
+Update 13/13/2020:
+
+-No longer uses webbrowser with youtube links
+  when using webbrowser, youd have to stop what youre doing and wait for the program to alt+tab
+  you back to what you were doing. Also, there would be a chance it never played the video as it
+  wouldn't load fast enough. Relied on no ads as well on youtube
+  
+-User must provide their own copies of the music
+  The user must provide .mp3 files that are listed in the musicList.txt, with matching file names.
+  I will not provide the .mp3 files for the users so that they have to acquire the files 
+  legally/themselves
+
+`````````````````````````````````````````````````````````````````````````````````````````````
