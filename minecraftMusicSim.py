@@ -2,20 +2,35 @@ import time
 import random
 import os
 from playsound import playsound
+from mutagen.mp3 import MP3
 
 
 def playSong(songs):
     while True:
+        # picks song at random, sets up name so that bot can process it
+        count = 0
         song = random.randint(0, 11)
         chosen = songs[song].replace("\n", "")
 
+        # sets the directory for playsound()
         directory = os.path.dirname(os.path.abspath(__file__))
-        print(directory + ("\\" + chosen))
+        print("Now Playing: ", chosen.replace(".mp3", ""))
+
+        # sets how long the program will sleep for
+        # when song is finished
+        audio = MP3(chosen)
+        sleepTime = 300 - round(audio.info.length)
+
+        # plays the chosen song, then goes to sleep
         playsound(directory + ("\\" + chosen))
-        time.sleep(300)
+        print("Songs Played: ", count + 1)
+        print()
+
+        time.sleep(sleepTime)
 
 
 def main():
+    # opens list of songs, then sends it to the playSong() method
     songList = open("musicList.txt", "r")
     songList = songList.readlines()
     playSong(songList)
