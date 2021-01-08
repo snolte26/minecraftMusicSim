@@ -23,7 +23,8 @@ def playSong(songs):
 
         # plays the chosen song, then goes to sleep
         playsound(directory + ("\\" + chosen))
-        print("Songs Played: ", count + 1)
+        count += 1
+        print("Songs Played: ", count)
         print()
 
         time.sleep(sleepTime)
