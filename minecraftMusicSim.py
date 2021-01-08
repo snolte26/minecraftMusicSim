@@ -6,9 +6,9 @@ from mutagen.mp3 import MP3
 
 
 def playSong(songs):
+    count = 0
     while True:
         # picks song at random, sets up name so that bot can process it
-        count = 0
         song = random.randint(0, 11)
         chosen = songs[song].replace("\n", "")
 
