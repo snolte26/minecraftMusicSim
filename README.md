@@ -1,6 +1,11 @@
 # minecraftMusicSim
 Simulates Mincreaft music playing as you work
 
+As stated in the 13/13/2020 update, I DO NOT provide the mp3 files. The user must provide the mp3
+files and place them in the same directory as the script and music list.
+
+Note: the minecraft song "Oxygène" must be renamed to "Oxygene", as the bot cannot read the letter "è"
+
 `````````````````````````````````````````````````````````````````````````````````````````````
 Update 13/13/2020:
 
