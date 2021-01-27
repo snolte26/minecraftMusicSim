@@ -22,7 +22,8 @@ def playSong(songs):
         sleepTime = 300 - round(audio.info.length)
 
         # plays the chosen song, then goes to sleep
-        playsound(directory + ("\\" + chosen))
+        chosenSong = directory + ("\\" + chosen)
+        playsound(chosenSong)
         count += 1
         print("Songs Played: ", count)
         print("Time to Next: ", sleepTime, " seconds")
