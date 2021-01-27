@@ -25,6 +25,7 @@ def playSong(songs):
         playsound(directory + ("\\" + chosen))
         count += 1
         print("Songs Played: ", count)
+        print("Time to Next: ", sleepTime, " seconds")
         print()
 
         time.sleep(sleepTime)
