@@ -20,6 +20,9 @@ def playSong(songs):
                 break
             elif chosen == songRepeat:
                 continue
+            else:
+                songRepeat = chosen
+                break
 
         # sets the directory for playsound()
         directory = os.path.dirname(os.path.abspath(__file__))
